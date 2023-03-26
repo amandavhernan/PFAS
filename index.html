@@ -61,11 +61,11 @@
 <div class='legend-title'>Legend</div>
 <div class='legend-scale'>
   <ul class='legend-labels'>
-    <li><span style='background:#fd1f07;'></span>1</li>
-    <li><span style='background:#fbe74d;'></span>0.8</li>
-    <li><span style='background:#83fb61;'></span>0.7</li>
-    <li><span style='background:#91eff6;'></span>0.6</li>
-    <li><span style='background:#77c1eb;'></span>0</li>
+    <li><span style='background:#fd1f07;opacity:0.7;'></span>1 (highest density)</li>
+    <li><span style='background:#fbe74d;opacity:0.7;'></span>0.8</li>
+    <li><span style='background:#83fb61;opacity:0.7;'></span>0.7</li>
+    <li><span style='background:#91eff6;opacity:0.7;'></span>0.6</li>
+    <li><span style='background:#77c1eb;opacity:0.7;'></span>0 (lowest density)</li>
   </ul>
 </div>
 </div>
@@ -83,6 +83,8 @@
     padding: 0;
     float: left;
     list-style: none;
+    width: -moz-fit-content;
+    width: fit-content;
     }
   .maplegend .legend-scale ul li {
     font-size: 80%;
