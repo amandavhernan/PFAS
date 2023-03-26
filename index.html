@@ -55,11 +55,11 @@
     more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</font></div>
 </div>
     
-    <div id='maplegend' class='maplegend' 
+    <div id='mapchatter' class='mapchatter' 
     style='position: absolute; z-index:9999; background-color:rgba(255, 255, 255, 0.8);
      border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
      
-<div class='legend-title'>Legend</div>
+<div class='legend-title'>How to Read</div>
 <div class='legend-scale'>
   <ul class='legend-labels'>
     <li><span style='background:#fd1f07;opacity:0.9;'></span>1 (highest density)</li>
@@ -72,26 +72,26 @@
 </div>
     
 <style type='text/css'>
-  .maplegend .legend-title {
+  .maplegend .legend-title .mapchatter {
     text-align: left;
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 90%;
     }
-  .maplegend .legend-scale ul {
+  .maplegend .mapchatter .legend-scale ul {
     margin: 0;
     margin-bottom: 2px;
     padding: 0;
     float: left;
     list-style: none;
     }
-  .maplegend .legend-scale ul li {
+  .maplegend .mapchatter .legend-scale ul li {
     font-size: 80%;
     list-style: none;
     margin-left: 0;
     margin-bottom: 2px;
     }
-  .maplegend ul.legend-labels li span {
+  .maplegend .mapchatter ul.legend-labels li span {
     display: block;
     float: left;
     height: 16px;
@@ -100,7 +100,7 @@
     margin-left: 0;
     border: 1px solid #999;
     }
-  .maplegend .legend-source {
+  .maplegend .mapchatter .legend-source {
     font-size: 80%;
     color: #777;
     clear: both;
@@ -128,6 +128,18 @@
             L.control.zoom({
                 position: 'bottomright'
                 }).addTo(map_35a5fe976dd3f6ea08bfcc643e554dd4);
+    
+        $( function() {
+    $( "#mapchatter" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
     
     $( function() {
     $( "#maplegend" ).draggable({
