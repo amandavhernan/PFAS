@@ -85,18 +85,14 @@
                     center: [39.5, -98.35],
                     crs: L.CRS.EPSG3857,
                     zoom: 4,
-                    zoomControl: true,
+                    zoomControl: false,
                     preferCanvas: false,
                 }
             );
     
-    L.control.zoom({
-    position: 'bottomright'
-}).addTo(map_35a5fe976dd3f6ea08bfcc643e554dd4);
-
-            
-
-        
+            L.control.zoom({
+                position: 'bottomright'
+                }).addTo(map_35a5fe976dd3f6ea08bfcc643e554dd4);
     
             var tile_layer_f8d3bc48452eb9ae010a38577ecb82ea = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
