@@ -15,12 +15,15 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -48,14 +51,12 @@
      border-radius:6px; padding: 10px; font-size:25px; left: 0px; top: 0px;'>
      
 <div class='legend-title'>Known PFAS Water Sites Across the U.S. </div>
-<div class='legend-scale'><font size="3">This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. 
-    The underlying data are coordinate locations where PFAS was detected, which the heatmap transforms into areas of various densities. Red indicates areas of highest density, or areas where 
-    more PFAS-contaminated water sites were found. When you zoom in, areas are re-calculated into more distinct clusters. The map provides a comprehensive overview of the extent of PFAS contamination across 
-    the United States, highlighting hotspots where contamination is at its highest.</font></div>
+<div class='legend-scale'><font size="3">This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. Red indicates areas of highest density, or areas where 
+    more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</font></div>
 </div>
     
     <div id='maplegend' class='maplegend' 
-    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+    style='position: absolute; z-index:9999; background-color:rgba(255, 255, 255, 0.8);
      border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
      
 <div class='legend-title'>Legend</div>
@@ -127,6 +128,18 @@
             L.control.zoom({
                 position: 'bottomright'
                 }).addTo(map_35a5fe976dd3f6ea08bfcc643e554dd4);
+    
+    $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
     
             var tile_layer_f8d3bc48452eb9ae010a38577ecb82ea = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
