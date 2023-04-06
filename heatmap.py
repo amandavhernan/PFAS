@@ -6,7 +6,7 @@ from folium.plugins import HeatMap
 mapObj = folium.Map([39.50, -98.35], zoom_start=4)
 
 # heatmap data
-df = pd.read_csv('data/water_sites.csv')
+df = pd.read_csv('data/water_sites/water_sites.csv')
 data = df.values.tolist()
 
 # rescale each value between 0 and 1 using (val-minColorVal)/(maxColorVal-minColorVal)
