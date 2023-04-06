@@ -51,7 +51,7 @@ ZIP,city,county,STATE_ME,REGION,sample_year,PFAS water sites,Total households,Me
 76033,Cleburne,Johnson,Texas,South Region,2015,1,9625,56883,"$55,001 - $75,000",25977,7741,29.8,25.1% - 50%,10267,32.3312378,-97.4313812
 77327,Cleveland,Liberty,Texas,South Region,2015,1,8900,44379,"$35,000 - $55,000",26206,11349,43.3,25.1% - 50%,10303,30.3327541,-94.9063415
 79836,Clint,El Paso,Texas,South Region,2015,1,1772,42979,"$35,000 - $55,000",5804,5435,93.6,More than 75%,1922,31.576767,-106.2254715
-75963,cogdoches,cogdoches,Texas,South Region,2015,1,,,,,,,,,31.631237,-94.6402969
+75963,Nacogdoches,Nacogdoches,Texas,South Region,2015,1,,,,,,,,,31.631237,-94.6402969
 77331,Coldspring,San Jacinto,Texas,South Region,2014,1,3178,49348,"$35,000 - $55,000",8064,2134,26.5,25.1% - 50%,4662,30.6149788,-95.1368942
 77842,College Station,Brazos,Texas,South Region,2014,1,,,,,,,,,30.5964642,-96.3052979
 77843,College Station,Brazos,Texas,South Region,2014,1,,,,,,,,,30.6044273,-96.3484802
@@ -66,7 +66,7 @@ ZIP,city,county,STATE_ME,REGION,sample_year,PFAS water sites,Total households,Me
 76522,Copperas Cove,Coryell,Texas,South Region,2014,1,14201,56002,"$55,001 - $75,000",37382,16344,43.7,25.1% - 50%,15848,31.1285152,-97.9141998
 78418,Corpus Christi,Kleberg,Texas,South Region,2023,1,12127,77307,"More than $75,000",29789,11175,37.5,25.1% - 50%,15251,27.6419582,-97.2856827
 78469,Corpus Christi,Nueces,Texas,South Region,2014,1,,,,,,,,,27.7983856,-97.4264221
-75110,Corsica,varro,Texas,South Region,2014,1,10234,43736,"$35,000 - $55,000",29665,16667,56.2,50.1% - 75%,11663,32.0891151,-96.4847946
+75110,Corsicana,Navarro,Texas,South Region,2014,1,10234,43736,"$35,000 - $55,000",29665,16667,56.2,50.1% - 75%,11663,32.0891151,-96.4847946
 78615,Coupland,Williamson,Texas,South Region,2013,1,376,70833,"$55,001 - $75,000",1363,624,45.8,25.1% - 50%,415,30.4594936,-97.3944092
 75835,Crockett,Houston,Texas,South Region,2014,1,4630,37356,"$35,000 - $55,000",11425,5078,44.4,25.1% - 50%,6136,31.3094368,-95.470932
 76036,Crowley,Tarrant,Texas,South Region,2015,1,8872,78485,"More than $75,000",27835,13137,47.2,25.1% - 50%,9535,32.5747109,-97.3755188
@@ -90,10 +90,10 @@ ZIP,city,county,STATE_ME,REGION,sample_year,PFAS water sites,Total households,Me
 76201,Denton,Denton,Texas,South Region,2015,1,10013,32704,"Less than $35,000",29447,12154,41.3,25.1% - 50%,11645,33.2164688,-97.1448059
 76208,Denton,Denton,Texas,South Region,2015,1,7648,86735,"More than $75,000",24992,10802,43.2,25.1% - 50%,8097,33.2063942,-97.0721893
 75115,Desoto,Dallas,Texas,South Region,2014,1,18989,71292,"$55,001 - $75,000",53118,47440,89.3,More than 75%,20088,32.6005363,-96.8627701
-75941,Diboll,Angeli,Texas,South Region,2014,1,2536,51618,"$35,000 - $55,000",8737,5024,57.5,50.1% - 75%,3007,31.1952209,-94.7680664
+75941,Diboll,Angelina,Texas,South Region,2014,1,2536,51618,"$35,000 - $55,000",8737,5024,57.5,50.1% - 75%,3007,31.1952209,-94.7680664
 77539,Dickinson,Galveston,Texas,South Region,2014,1,16255,73285,"$55,001 - $75,000",44228,21739,49.2,25.1% - 50%,18147,29.4659042,-95.0352783
 78537,Don,Hidalgo,Texas,South Region,2014,1,12207,29705,"Less than $35,000",45120,42906,95.1,More than 75%,14874,26.1855621,-98.0515289
-75943,Douglass,cogdoches,Texas,South Region,2014,1,462,45208,"$35,000 - $55,000",1338,373,27.9,25.1% - 50%,591,31.6466351,-94.8865967
+75943,Douglass,Nacogdoches,Texas,South Region,2014,1,462,45208,"$35,000 - $55,000",1338,373,27.9,25.1% - 50%,591,31.6466351,-94.8865967
 79029,Dumas,Moore,Texas,South Region,2014,1,4752,57457,"$55,001 - $75,000",15349,9816,64,50.1% - 75%,5738,35.8704758,-101.9752502
 75138,Duncanville,Dallas,Texas,South Region,2015,1,,,,,,,,,32.6460114,-96.9255218
 77434,Eagle Lake,Colorado,Texas,South Region,2014,1,1602,42215,"$35,000 - $55,000",4562,3589,78.7,More than 75%,2054,29.5748882,-96.329895
@@ -150,10 +150,10 @@ ZIP,city,county,STATE_ME,REGION,sample_year,PFAS water sites,Total households,Me
 75948,Hemphill,Sabine,Texas,South Region,2015,1,2717,38939,"$35,000 - $55,000",6072,1087,17.9,10% - 25%,5383,31.3194866,-93.7932739
 75652,Henderson,Rusk,Texas,South Region,2015,1,4672,56721,"$55,001 - $75,000",16078,6963,43.3,25.1% - 50%,5613,32.1955032,-94.7480393
 79045,Hereford,Deaf Smith,Texas,South Region,2013,1,6046,50635,"$35,000 - $55,000",18706,14355,76.7,More than 75%,7106,34.8259735,-102.407959
-76643,Hewitt,McLenn,Texas,South Region,2014,1,5167,71096,"$55,001 - $75,000",14705,4181,28.4,25.1% - 50%,5329,31.4482098,-97.2013016
+76643,Hewitt,McLennan,Texas,South Region,2014,1,5167,71096,"$55,001 - $75,000",14705,4181,28.4,25.1% - 50%,5329,31.4482098,-97.2013016
 77562,Highlands,Harris,Texas,South Region,2013,1,3600,56927,"$55,001 - $75,000",10064,4875,48.4,25.1% - 50%,3846,29.8231258,-95.052475
 76366,Holliday,Archer,Texas,South Region,2014,1,839,47574,"$35,000 - $55,000",2152,198,9.2,Less than 10%,1038,33.7403565,-98.7200546
-78861,Hondo,Medi,Texas,South Region,2015,1,4402,55155,"$55,001 - $75,000",14318,8607,60.1,50.1% - 75%,5042,29.3644085,-99.1165771
+78861,Hondo,Medina,Texas,South Region,2015,1,4402,55155,"$55,001 - $75,000",14318,8607,60.1,50.1% - 75%,5042,29.3644085,-99.1165771
 77005,Houston,Harris,Texas,South Region,2014,1,10271,202526,"More than $75,000",29022,8187,28.2,25.1% - 50%,10949,29.717701,-95.4246902
 77010,Houston,Harris,Texas,South Region,2014,2,598,250000,"More than $75,000",911,108,11.9,10% - 25%,835,29.7551537,-95.3619156
 77010,Houston,Harris,Texas,South Region,2015,1,598,250000,"More than $75,000",911,108,11.9,10% - 25%,835,29.7551537,-95.3619156
@@ -219,7 +219,7 @@ ZIP,city,county,STATE_ME,REGION,sample_year,PFAS water sites,Total households,Me
 75607,Longview,Gregg,Texas,South Region,2014,1,,,,,,,,,32.46278,-94.7312393
 79408,Lubbock,Lubbock,Texas,South Region,2015,1,,,,,,,,,33.5925179,-101.8490372
 79416,Lubbock,Lubbock,Texas,South Region,2018,1,13294,58701,"$55,001 - $75,000",34628,17410,50.3,50.1% - 75%,14906,33.5952225,-101.9441376
-75902,Lufkin,Angeli,Texas,South Region,2013,1,,,,,,,,,31.3090858,-94.7423401
+75902,Lufkin,Angelina,Texas,South Region,2013,1,,,,,,,,,31.3090858,-94.7423401
 77657,Lumberton,Hardin,Texas,South Region,2015,1,7871,77408,"More than $75,000",21323,1599,7.5,Less than 10%,8674,30.2449188,-94.2072296
 78052,Lytle,Atascosa,Texas,South Region,2015,1,1854,55944,"$55,001 - $75,000",6128,4052,66.1,50.1% - 75%,2119,29.2358475,-98.7899246
 75147,Mabank,Van Zandt,Texas,South Region,2013,1,2396,44474,"$35,000 - $55,000",6951,1203,17.3,10% - 25%,2772,32.3864784,-96.0816269
@@ -230,11 +230,11 @@ ZIP,city,county,STATE_ME,REGION,sample_year,PFAS water sites,Total households,Me
 75671,Marshall,Harrison,Texas,South Region,2013,1,,,,,,,,,32.5415344,-94.3662186
 75671,Marshall,Harrison,Texas,South Region,2014,1,,,,,,,,,32.5415344,-94.3662186
 78505,McAllen,Hidalgo,Texas,South Region,2015,1,,,,,,,,,26.2000294,-98.232872
-76657,McGregor,McLenn,Texas,South Region,2013,1,3784,80769,"More than $75,000",11151,3727,33.4,25.1% - 50%,4156,31.4423676,-97.3958435
+76657,McGregor,McLennan,Texas,South Region,2013,1,3784,80769,"More than $75,000",11151,3727,33.4,25.1% - 50%,4156,31.4423676,-97.3958435
 75070,Mckinney,Collin,Texas,South Region,2015,1,37715,108939,"More than $75,000",109085,41600,38.1,25.1% - 50%,39685,33.1593323,-96.689827
 79245,Memphis,Hall,Texas,South Region,2014,1,941,41576,"$35,000 - $55,000",2339,1068,45.7,25.1% - 50%,1272,34.7184105,-100.538414
 78570,Mercedes,Hidalgo,Texas,South Region,2014,1,8732,35382,"$35,000 - $55,000",32841,31457,95.8,More than 75%,10490,26.1727848,-97.9104004
-76859,Merd,Merd,Texas,South Region,2014,1,951,43068,"$35,000 - $55,000",1787,803,44.9,25.1% - 50%,1603,30.9039307,-99.7913971
+76859,Menard,Menard,Texas,South Region,2014,1,951,43068,"$35,000 - $55,000",1787,803,44.9,25.1% - 50%,1603,30.9039307,-99.7913971
 75181,Mesquite,Dallas,Texas,South Region,2015,1,7431,88990,"More than $75,000",25264,19724,78.1,More than 75%,7714,32.7396774,-96.5595169
 75185,Mesquite,Dallas,Texas,South Region,2015,1,,,,,,,,,32.7756424,-96.5977554
 79702,Midland,Midland,Texas,South Region,2015,1,,,,,,,,,31.9975109,-102.0742874
@@ -354,9 +354,9 @@ ZIP,city,county,STATE_ME,REGION,sample_year,PFAS water sites,Total households,Me
 76384,Vernon,Wilbarger,Texas,South Region,2015,1,4755,44719,"$35,000 - $55,000",12112,5397,44.6,25.1% - 50%,5933,34.1503677,-99.3066635
 77902,Victoria,Victoria,Texas,South Region,2014,1,,,,,,,,,28.7972126,-97.0069122
 77662,Vidor,Orange,Texas,South Region,2014,1,10343,60654,"$55,001 - $75,000",27587,3021,11,10% - 25%,12339,30.1467819,-94.0041199
-76702,Waco,McLenn,Texas,South Region,2015,1,,,,,,,,,31.5180569,-97.2038422
-76705,Waco,McLenn,Texas,South Region,2014,1,11050,43521,"$35,000 - $55,000",31868,16538,51.9,50.1% - 75%,12452,31.6182194,-97.1058731
-76706,Waco,McLenn,Texas,South Region,2014,1,13488,33321,"Less than $35,000",39667,19693,49.6,25.1% - 50%,15505,31.5055294,-97.1268463
+76702,Waco,McLennan,Texas,South Region,2015,1,,,,,,,,,31.5180569,-97.2038422
+76705,Waco,McLennan,Texas,South Region,2014,1,11050,43521,"$35,000 - $55,000",31868,16538,51.9,50.1% - 75%,12452,31.6182194,-97.1058731
+76706,Waco,McLennan,Texas,South Region,2014,1,13488,33321,"Less than $35,000",39667,19693,49.6,25.1% - 50%,15505,31.5055294,-97.1268463
 75168,Waxahachie,Ellis,Texas,South Region,2015,1,,,,,,,,,32.388443,-96.8456573
 76086,Weatherford,Parker,Texas,South Region,2014,1,8314,57762,"$55,001 - $75,000",23161,6204,26.8,25.1% - 50%,9080,32.7516098,-97.7923584
 78596,Weslaco,Hidalgo,Texas,South Region,2015,2,19053,45881,"$35,000 - $55,000",68984,64161,93,More than 75%,24181,26.1381931,-97.9822235
