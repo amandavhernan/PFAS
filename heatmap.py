@@ -25,12 +25,11 @@ HeatMap(mapData, gradient=colrGradient).add_to(mapObj)
 
 # add a title and subtitle to the map
 title_html = '<h3 align="center" style="font-size:16px"><b>Known PFAS Water Sites Across the U.S.</b></h3>'
-subtitle_html = '<h4 align="center" style="font-size:14px"><i>This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. Red indicates areas of highest density, or areas where more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</i></h4>'
-mapObj.get_root().html.add_child(folium.Element(title_html + subtitle_html))
+subtitle_html = '<h4 align="center" style="font-size:14px">This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. Red indicates areas of highest density, or areas where more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</h4>'
 
 # create a continuous legend with only two labels
-colormap = folium.LinearColormap(colors=['blue', 'red'], index=[0.0, 1.0], caption='Contamination Level')
-mapObj.add_child(colormap)
+colormap = folium.LinearColormap(colors=['blue', 'cyan', 'lime', 'yellow', 'red'], vmin=0.0, vmax=1.0, caption='Contamination Level')
+colormap.add_to(mapObj)
 
 # save map object as html
 mapObj.save("index.html")
