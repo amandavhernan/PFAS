@@ -24,25 +24,13 @@ colrGradient = {0.0: 'blue',
 HeatMap(mapData, gradient=colrGradient).add_to(mapObj)
 
 # add a title and subtitle to the map
-title_html = '<h3 align="center" style="font-size:16px"><b>Water Site Locations Heatmap</b></h3>'
-subtitle_html = '<h4 align="center" style="font-size:14px"><i>Showing the distribution of water sites across the United States</i></h4>'
+title_html = '<h3 align="center" style="font-size:16px"><b>Known PFAS Water Sites Across the U.S.</b></h3>'
+subtitle_html = '<h4 align="center" style="font-size:14px"><i>This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. Red indicates areas of highest density, or areas where more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</i></h4>'
 mapObj.get_root().html.add_child(folium.Element(title_html + subtitle_html))
 
-# add a continuous color legend to the map
-# create colormap with only two values
-colormap = folium.LinearColormap(colors=['blue', 'red'], vmin=0.0, vmax=1.0)
-
-# create a new legend with only two labels
-legend_html = '<div style="position: fixed; bottom: 50px; left: 50px; z-index:9999; width: 100px; background-color: rgba(255, 255, 255, 0.5); border-radius: 5px; padding: 10px;">'
-legend_html += '<p style="font-size:14px; margin:0px"><b>Water Site Density</b></p>'
-legend_html += '<div style="background-color: ' + colormap.rgb_hex_str(0.0) + '; height: 10px"></div>'
-legend_html += '<p style="font-size:12px; margin:0px">0.0</p>'
-legend_html += '<div style="background-color: ' + colormap.rgb_hex_str(1.0) + '; height: 10px"></div>'
-legend_html += '<p style="font-size:12px; margin:0px">1.0</p>'
-legend_html += '</div>'
-
-# add the legend to the map
-mapObj.get_root().html.add_child(folium.Element(legend_html))
+# create a continuous legend with only two labels
+colormap = folium.LinearColormap(colors=['blue', 'cyan', 'lime', 'yellow', 'red'], index=[0.0, 1.0], caption='Contamination Level')
+mapObj.add_child(colormap)
 
 # save map object as html
 mapObj.save("index.html")
