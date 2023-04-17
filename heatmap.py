@@ -23,5 +23,14 @@ colrGradient = {0.0: 'blue',
 # use data to create heatmap and add it to map object
 HeatMap(mapData, gradient=colrGradient).add_to(mapObj)
 
+# add a title and subtitle to the map
+title_html = '<h3 align="center" style="font-size:16px"><b>Water Site Locations Heatmap</b></h3>'
+subtitle_html = '<h4 align="center" style="font-size:14px"><i>Showing the distribution of water sites across the United States</i></h4>'
+mapObj.get_root().html.add_child(folium.Element(title_html + subtitle_html))
+
+# add a continuous color legend to the map
+colormap = folium.LinearColormap(colors=['blue', 'cyan', 'lime', 'yellow', 'red'], index=[0.0, 0.6, 0.7, 0.8, 1.0], caption='Water Site Density')
+mapObj.add_child(colormap)
+
 # save map object as html
 mapObj.save("index.html")
