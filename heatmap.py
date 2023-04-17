@@ -29,7 +29,7 @@ subtitle_html = '<h4 align="center" style="font-size:14px"><i>This interactive h
 mapObj.get_root().html.add_child(folium.Element(title_html + subtitle_html))
 
 # create a continuous legend with only two labels
-colormap = folium.LinearColormap(colors=['blue', 'cyan', 'lime', 'yellow', 'red'], index=[0.0, 1.0], caption='Contamination Level')
+colormap = folium.LinearColormap(colors=['blue', 'red'], index=[0.0, 1.0], caption='Contamination Level')
 mapObj.add_child(colormap)
 
 # save map object as html
