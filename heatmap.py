@@ -24,8 +24,8 @@ colrGradient = {0.0: 'blue',
 HeatMap(mapData, gradient=colrGradient).add_to(mapObj)
 
 # create a FloatText object for the title and subtitle
-title_html = '<h3 style="font-size:16px"><b>Known PFAS Water Sites Across the U.S.</b></h3>'
-subtitle_html = '<h4 style="font-size:14px">This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. Red indicates areas of highest density, or areas where more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</h4>'
+title_html = '<h2 style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif"><b>Known PFAS Water Sites Across the U.S.</b></h2>'
+subtitle_html = '<h3 style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif">This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. Red indicates areas of highest density, or areas where more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</h3>'
 mapObj.get_root().html.add_child(folium.Element(title_html + subtitle_html))
 
 # create a continuous legend with only two labels
