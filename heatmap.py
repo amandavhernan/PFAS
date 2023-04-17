@@ -24,9 +24,8 @@ colrGradient = {0.0: 'blue',
 HeatMap(mapData, gradient=colrGradient).add_to(mapObj)
 
 # title and subtitle
-title_html = '<div style="position: fixed; top: 10px; left: 10px; z-index: 1000;"><h3 style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif"><b>Known PFAS Water Sites Across the U.S.</b></h3></div>'
-subtitle_html = '<div style="position: fixed; top: 70px; left: 10px; z-index: 1000;"><h4 style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif">This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. Red indicates areas of highest density, or areas where more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</h4></div>'
-
+title_html = '<h3 style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif"><b>Known PFAS Water Sites Across the U.S.</b></h3>'
+subtitle_html = '<h4 style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif">This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. Red indicates areas of highest density, or areas where more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</h4>'
 mapObj.get_root().html.add_child(folium.Element(title_html + subtitle_html))
 
 # gradient legend
