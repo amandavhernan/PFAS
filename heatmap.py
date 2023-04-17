@@ -29,7 +29,7 @@ subtitle_html = '<h4 align="center" style="font-size:14px"><i>Showing the distri
 mapObj.get_root().html.add_child(folium.Element(title_html + subtitle_html))
 
 # add a continuous color legend to the map
-colormap = folium.LinearColormap(colors=['blue', 'cyan', 'lime', 'yellow', 'red'], index=[0.0, 0.6, 0.7, 0.8, 1.0], caption='Water Site Density')
+colormap = folium.LinearColormap(colors=['blue', 'cyan', 'lime', 'yellow', 'red'], index=[0.0, 1.0], caption='Water Site Density', width=300, no_wrap=True)
 mapObj.add_child(colormap)
 
 # save map object as html
