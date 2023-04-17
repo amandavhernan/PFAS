@@ -29,8 +29,20 @@ subtitle_html = '<h4 align="center" style="font-size:14px"><i>Showing the distri
 mapObj.get_root().html.add_child(folium.Element(title_html + subtitle_html))
 
 # add a continuous color legend to the map
-colormap = folium.LinearColormap(colors=['blue', 'cyan', 'lime', 'yellow', 'red'], index=[0.0, 1.0], caption='Water Site Density', width=300, no_wrap=True)
-mapObj.add_child(colormap)
+# create colormap with only two values
+colormap = folium.LinearColormap(colors=['blue', 'red'], vmin=0.0, vmax=1.0)
+
+# create a new legend with only two labels
+legend_html = '<div style="position: fixed; bottom: 50px; left: 50px; z-index:9999; width: 100px; background-color: rgba(255, 255, 255, 0.5); border-radius: 5px; padding: 10px;">'
+legend_html += '<p style="font-size:14px; margin:0px"><b>Water Site Density</b></p>'
+legend_html += '<div style="background-color: ' + colormap.rgb_hex_str(0.0) + '; height: 10px"></div>'
+legend_html += '<p style="font-size:12px; margin:0px">0.0</p>'
+legend_html += '<div style="background-color: ' + colormap.rgb_hex_str(1.0) + '; height: 10px"></div>'
+legend_html += '<p style="font-size:12px; margin:0px">1.0</p>'
+legend_html += '</div>'
+
+# add the legend to the map
+mapObj.get_root().html.add_child(folium.Element(legend_html))
 
 # save map object as html
 mapObj.save("index.html")
