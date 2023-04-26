@@ -25,6 +25,18 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
+                body {
+                    margin: 0;
+                    height: calc(100% - 100px); /* minus navbar incl. border */
+                }
+
+                html, #map {
+                    height: 100%;
+                }
+
+                header.navbar {
+                    margin-bottom: 0; /* remove bottom margin */ 
+                }
                 #map_6d3d2580f8c13f03a21dbee5b5e9beac {
                     position: relative;
                     width: 100.0%;
@@ -33,14 +45,21 @@
                     top: 0.0%;
                 }
                 .leaflet-container { font-size: 1rem; }
+
+                .header {
+                    width:100%;
+                    background:#fff;
+                    position:sticky;
+                }
             </style>
         
     <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 </head>
 <body>
-    
+    <div class="header">
     <h3 style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif"><b>Known PFAS Water Sites Across the U.S.</b></h3><h4 style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif">This interactive heatmap shows the levels of PFAS contamination at various water sites, including drinking water, surface water, and groundwater. Red indicates areas of highest density, or areas where more PFAS-contaminated water sites were found. When zoomed in, areas are re-calculated into more distinct clusters.</h4>
+</div>
     
             <div class="folium-map" id="map_6d3d2580f8c13f03a21dbee5b5e9beac" ></div>
         
